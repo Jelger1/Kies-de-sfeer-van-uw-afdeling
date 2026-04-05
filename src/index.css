@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zuyderland-darkblue: #286B86;
+  --color-zuyderland-lightblue: #81CBF2;
+  --color-zuyderland-text: #333333;
+  --color-zuyderland-bg: #F9FAFB;
+  --font-calibri: "Calibri", "Arial", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-zuyderland-bg text-zuyderland-text font-calibri;
+    font-size: 14.66px; /* Approx 11pt */
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuyderland Kunstpanel</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <div class="header-brand">
+            <img src="assets/logo-zl-concern.svg" alt="Zuyderland" class="header-logo" />
+          </div>
+        </div>
+        <div class="header-badge">
+          <span>Kunstpanel &bull; Stemmen open tot 15 April</span>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <div class="intro">
+          <h2>Kies de sfeer van uw afdeling</h2>
+          <p>
+            Welk kunstwerk spreekt u het meeste aan? Uw stem helpt ons bij het
+            creëren van een <strong>Healing Environment</strong> die bijdraagt
+            aan rust en herstel.
+          </p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel" id="carousel">
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Slides rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-arrow carousel-arrow-left" id="carousel-prev" aria-label="Vorige">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="carousel-arrow carousel-arrow-right" id="carousel-next" aria-label="Volgende">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+
+          <!-- Dots -->
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <!-- Slide Counter (mobile) -->
+        <div class="carousel-counter" id="carousel-counter"></div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="icon icon-xl icon-heart-filled">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </span>
+            <span>De zorg van je leven</span>
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacybeleid</a>
+            <a href="#">Over Zuyderland</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Sluiten">&times;</button>
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Vorige foto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" draggable="false">
+      </div>
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Volgende foto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="lightbox-dots" id="lightbox-dots"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
